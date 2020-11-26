@@ -1,8 +1,10 @@
 import React from 'react';
+import { FlatList } from 'react-native'
 import { Container } from './styles';
+
+//Components
 import Product from '../../Components/Product';
 import SearchBar from '../../Components/SearchBar';
-import { FlatList } from 'react-native'
 
 export default () => {
     return (

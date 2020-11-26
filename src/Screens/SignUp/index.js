@@ -12,7 +12,7 @@ import {
 
 import SignInput from '../../Components/SignInput'
 
-// Icons
+//Icons
 import BiritaLogo from '../../assets/birita.svg';
 import PersonIcon from '../../assets/person.svg';
 import EmailIcon from '../../assets/email.svg';

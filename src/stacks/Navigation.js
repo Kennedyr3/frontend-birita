@@ -13,7 +13,7 @@ import Preload from "../Screens/Preload";
 import SignIn from "../Screens/SignIn";
 import SignUp from "../Screens/SignUp";
 
-// Icon's
+// Icons
 import Arrow from '../icons/arrow_back_ios.svg';
 import HomeIcon from '../icons/home.svg';
 import SearchIcon from '../icons/search.svg';

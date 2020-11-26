@@ -1,12 +1,14 @@
 import React from 'react';
 import { FlatList } from 'react-native'
-import { Container } from './styles';
+import { Container, ScrollView, Option, Img, Label } from './styles';
+import { SliderBox } from "react-native-image-slider-box";
+
+//Components
 import Tips from '../../Components/Tips';
 import Product from '../../Components/Product';
 import SearchBar from '../../Components/SearchBar';
-import { ScrollView, Option, Img, Label } from './styles';
-import { SliderBox } from "react-native-image-slider-box";
 
+//Imagens
 import img1 from '../../imagens/jack.jpg';
 import img2 from '../../imagens/vinho.png';
 import img3 from '../../imagens/hei.jpg';
@@ -51,8 +53,6 @@ const items = [
         img: img7,
         label: 'Cobrar',
     },
-
-
 ];
 
 const props = [
@@ -70,8 +70,6 @@ const props = [
 
 
 export default () => {
-
-
     return (
         <Container>
             <FlatList

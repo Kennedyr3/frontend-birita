@@ -8,7 +8,7 @@ import {
 
 import Tips from '../../Components/Tips';
 
-// Icon's
+//Icons
 import product from '../../imagens/jack.jpg';
 import Star from '../../icons/star.svg';
 import Favorite from '../../icons/favorite.svg';

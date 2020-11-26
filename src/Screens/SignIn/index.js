@@ -11,7 +11,7 @@ import {
 
 import SignInput from '../../Components/SignInput'
 
-// Icon's
+//Icons
 import BiritaLogo from '../../assets/birita.svg';
 import EmailIcon from '../../assets/email.svg';
 import LockIcon from '../../assets/lock.svg';

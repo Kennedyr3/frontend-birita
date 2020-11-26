@@ -1,5 +1,7 @@
 import React from 'react';
 import { ScrollView, Option, Img, Label, View } from './styles';
+
+// Imagens
 import img1 from '../../imagens/jack.jpg';
 import img2 from '../../imagens/vinho.png';
 import img3 from '../../imagens/hei.jpg';
