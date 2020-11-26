@@ -8,7 +8,7 @@ export const Container = styled.SafeAreaView`
 `;
 
 export const Scroller = styled.ScrollView``;
-
+export const TContainer = styled.View``;
 export const ListArea = styled.View`
     margin-top: 30px;
     margin-bottom: 30px;
@@ -44,4 +44,28 @@ export const Label = styled.Text`
     font-weight: bold;
     margin-top: 8px;
     font-size: 14px;
+`;
+
+export const View = styled.View`
+    borderTopWidth: 1px;
+    borderBottomWidth: 1px;
+    borderColor: #F1F1F1;
+    justify-content: center;
+    marginBottom: 30px;
+`;
+
+export const ScrollView = styled.ScrollView.attrs(() => ({
+    horizontal: true,
+    HorizontalScrollIndicator: false,
+    contentContainerStyle: {
+        alignItems: 'center',
+        paddingLeft: 16,
+    },
+}))`
+    background: #fff;
+    height: 130px;
+    border-color: red;
+     borderTopWidth: 1px;
+    borderBottomWidth: 1px;
+    borderColor: #F1F1F1;
 `;

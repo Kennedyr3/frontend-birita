@@ -144,12 +144,6 @@ export const Value = styled.Text`
 
 export const Image = styled.Text`
   background: red;
- 
-  
-    
-   
-   
-   
 `;
 
 export default styles;
