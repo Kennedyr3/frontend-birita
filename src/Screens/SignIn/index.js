@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { useNavigation } from '@react-navigation/native';
+import React from 'react';
 import { 
     Container,
     InputArea,
@@ -7,31 +6,17 @@ import {
     CustomButtonText,
     SignMessageButton,
     SignMessageButtonText,
-    SignMessageButtonTextBold,
+    SignMessageButtonTextBold
 } from './styles';
 
 import SignInput from '../../Components/SignInput'
 
+// Icon's
 import BiritaLogo from '../../assets/birita.svg';
 import EmailIcon from '../../assets/email.svg';
 import LockIcon from '../../assets/lock.svg';
 
 export default () => {
-    
-    const navigation = useNavigation();
-
-    const [emailField, setEmailField] = useState('');
-    const [passwordField, setPasswordField] = useState('');
-    
-    const handleSignClick = () => {
-        
-    }
-
-    const handleMessageButtonClick = () => {
-        navigation.reset({
-            routes: [{name: 'SignUp'}]
-        });
-    }
 
     return (
         <Container>
@@ -41,24 +26,20 @@ export default () => {
                <SignInput 
                     IconSvg={EmailIcon}
                     placeholder="Digite seu e-mail"
-                    value={emailField}
-                    onChangeText={t=>setEmailField(t)}
                />
 
                <SignInput
                     IconSvg={LockIcon}
                     placeholder="Digite sua senha"
-                    value={passwordField}
-                    onChangeText={t=>setPasswordField(t)}
                     password={true}
                />
 
-                <CustomButton onPress={handleSignClick}>
-                    <CustomButtonText>Login</CustomButtonText>
+                <CustomButton>
+                    <CustomButtonText>Entrar</CustomButtonText>
                 </CustomButton>
             </InputArea>
 
-            <SignMessageButton onPress={handleMessageButtonClick}>
+            <SignMessageButton>
                 <SignMessageButtonText>Ainda não possui uma conta?</SignMessageButtonText>
                 <SignMessageButtonTextBold>Cadastre-se</SignMessageButtonTextBold>
             </SignMessageButton>

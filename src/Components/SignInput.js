@@ -5,7 +5,7 @@ import styled from 'styled-components/native';
 const InputArea = styled.View`
     width: 100%;
     height: 50px;
-    background-color: #EEF3F6;
+    background-color: #F0F0F0;
     flex-direction: row;
     border-radius: 30px;
     padding-left: 15px;
@@ -26,7 +26,7 @@ export default ({IconSvg, placeholder, value, onChangeText, password}) => {
             <IconSvg width="24" height="24" fill="#000"/>
             <Input
                 placeholder={placeholder}
-                placeholderTextColor="#000"
+                placeholderTextColor="#888888"
                 value={value}
                 onChangeText={onChangeText}
                 secureTextEntry={password}

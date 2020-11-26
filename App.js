@@ -6,18 +6,16 @@
  * @flow strict-local
  */
 
+import "react-native-gesture-handler";
 import React from 'react';
-import { NavigationContainer }  from '@react-navigation/native';
-import UserContextProvider from './src/contexts/UserContext';
-
-import MainStack  from './src/stacks/MainStack';
+import Navigation from "./src/stacks/Navigation";
+import { StatusBar } from "react-native";
 
 export default () => {
   return (
-    <UserContextProvider>
-      <NavigationContainer>
-        <MainStack/>
-      </NavigationContainer>
-   </UserContextProvider>
+    <>
+    <StatusBar barStyle="dark-content" backgroundColor="#fff"/>
+    <Navigation />
+    </>
   );
-};
+}
