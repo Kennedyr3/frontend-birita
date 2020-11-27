@@ -9,6 +9,7 @@ import {
 import HomeScreen from "../Screens/HomeScreen";
 import Search from "../Screens/Search";
 import Buy from "../Screens/Buy";
+import Cart from "../screens/Cart";
 import Preload from "../Screens/Preload";
 import SignIn from "../Screens/SignIn";
 import SignUp from "../Screens/SignUp";
@@ -114,6 +115,7 @@ export default () => {
         <Drawer.Screen name="Preload" component={Preload} options={optionsHeaderBack} />
         <Drawer.Screen name="SignIn" component={SignIn} options={optionsHeaderBack} />
         <Drawer.Screen name="SignUp" component={SignUp} options={optionsHeaderBack} />
+        <Drawer.Screen name="Cart" component={Cart} options={optionsHeaderBack} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
