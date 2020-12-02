@@ -82,12 +82,6 @@ $ npx react-native run-android
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-#### [](https://github.com/kennedyr3/Ecoleta#server-nodejs--typescript)**Server**  ([NodeJS](https://nodejs.org/en/)
-
--   **[Express](https://expressjs.com/)**
-
-> Veja o arquivo  [package.json](https://github.com/kennedyr3/ecoleta/blob/master/server/package.json)
-
 #### [](https://github.com/kennedyr3/frontend-birita#mobile-react-native--typescript)**Mobile**  ([React Native](http://www.reactnative.com/))
 
 -   **[React Navigation](https://reactnavigation.org/)**
