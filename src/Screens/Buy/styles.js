@@ -24,7 +24,7 @@ export const Img = styled.Image`
     border-radius: 10px;
     justify-content: space-between;
     flex-direction: column;
-    border: 1px;
+    borderWidth: 1px;
     border-color: #EBEBEB;
     margin-bottom: 20px
 `;
@@ -73,8 +73,7 @@ export const Value = styled.Text`
 `;
 
 export const Actions = styled.View`
-    flex-direction: row;
-    position: relative;
+    margin-bottom: 30px;
 `;
 
 export const Option = styled.View`
@@ -83,7 +82,14 @@ export const Option = styled.View`
 
 export const FavoriteTouch = styled.TouchableOpacity`
     margin-left: 150px;
-    margin-top: 55px;
+    margin-top: 25px;
+`;
+
+export const TextEvaluate = styled.Text`
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-bottom: 0px;
 `;
 
 

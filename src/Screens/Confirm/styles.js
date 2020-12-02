@@ -19,9 +19,10 @@ export const Total = styled.View`
     margin-right: 20px;
     margin-top: 15px;
 `;
+
 export const Divider = styled.View`
     flex-direction: row;
-    margin-top: 10px;
+    marginBottom: 10px;
 `;
 
 export const Text = styled.View`
@@ -41,19 +42,6 @@ export const Amount = styled.Text`
     justify-content: space-between;
     font-weight: bold;
     font-size: 18px;
-
-`;
-
-export const Footer = styled.View`
-    height: 120px;
-    width: 100%;
-    background-color:#fff;
-    borderTopWidth: 1px;
-    borderTopColor: #ddd;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
 `;
 
 export const Img = styled.Image`
@@ -65,6 +53,7 @@ export const Img = styled.Image`
     justify-content: space-between;
     flex-direction: column;
 `;
+
 export const ButtonText = styled.View`
     width: 250px;
     height: 126px;
@@ -78,6 +67,18 @@ export const ButtonText = styled.View`
 
 export const Cifrao = styled.Text`
     color: #165A07;
+`;
+
+export const Footer = styled.View`
+    height: 120px;
+    width: 100%;
+    background-color:#fff;
+    borderTopWidth: 1px;
+    borderTopColor: #ddd;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
 `;
 
 export const Title = styled.Text`
@@ -112,4 +113,54 @@ export const Value = styled.Text`
     margin-left: 0px;
     margin-right: 0px;
     font-size: 18px;
+`;
+
+export const Address = styled.View`
+    width: 95%;
+    height: 135px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px;
+    borderRadius: 10px;
+    borderColor: #f0f0f0;
+    margin-left: 10px;
+    marginBottom: 10px;
+`;
+
+export const TitleAddress = styled.Text`
+    font-weight: bold;
+    marginBottom: 5px;
+`;
+
+export const TextAddress = styled.Text`
+    marginBottom: 5px;
+`;
+
+export const Summary = styled.View`
+    width: 95%;
+    height: 135px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px;
+    borderRadius: 10px;
+    borderColor: #f0f0f0;
+    margin-left: 10px;
+`;
+
+export const TitleSummary = styled.Text`
+    font-weight: bold;
+    marginBottom: 5px;
+`;
+
+export const TextSummary = styled.Text`
+    marginBottom: 5px;
+    flex-direction: row;
+`;
+
+export const ValueTotal = styled.Text`
+`;
+
+export const ContainerSummary = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
 `;

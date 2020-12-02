@@ -1,53 +1,63 @@
 import * as React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import {
-    Divider, Img,
-    Title, ButtonText, Value, Description, Cifrao, Footer
+    Amount, Price, Total, BoxValue,
+    Divider, Img, Title, ButtonText, Value, Description,
+    Cifrao, Footer, ScrollView, Container
 } from './styles';
 
 import product from '../../imagens/jack.jpg';
+import InputSpinner from "react-native-input-spinner";
 
-function HomeScreen() {
+export default () => {
     return (
         <View style={{ flex: 1, backgroundColor: '#fff' }}>
-            <Divider style={styles.Divider}>
-                <Img source={product} />
-                <ButtonText>
-                    <Title>Whiskey Jack Daniels</Title>
-                    <Description>Preço:</Description>
-                    <Value><Cifrao>R$ </Cifrao>200,00</Value>
+            <Container>
+                <ScrollView>
+                    <Divider style={styles.Divider}>
+                        <Img source={product} />
+                        <ButtonText>
+                            <Title>Whiskey Jack Daniels</Title>
+                            <Description>Preço:</Description>
+                            <Value><Cifrao>R$ </Cifrao>200,00</Value>
+                        </ButtonText>
+                        <BoxValue>
+                            <InputSpinner
+                                max={100}
+                                min={1}
+                                step={1}
+                                buttonStyle={{ height: 25, width: 25, marginTop: 13 }}
+                                inputStyle={{ fontSize: 20, }}
+                                style={{ height: 50, width: 90 }}
+                                colorMax={"#f04048"}
+                                colorMin={"gray"}
+                                value={this.state.number}
+                                onChange={(num) => {
+                                    console.log(num);
+                                }}
+                            />
+                        </BoxValue>
+                    </Divider>
 
-                </ButtonText>
-            </Divider>
+                </ScrollView>
+            </Container>
             <Footer>
-                <Text>Quantidade<Text>2</Text></Text>
+                <Total>
+                    <Amount>Total:</Amount>
+                    <Cifrao>R$ <Price>200,00</Price></Cifrao>
+                </Total>
+                <Text
+                    style={styles.Button}
+                    title="Comprar"
+                    onPress={() => Alert.alert('Buy meu querido')}
+                >
+                    Continuar
+                </Text>
             </Footer>
         </View>
     );
 }
-
-function SettingsScreen() {
-    return (
-        <View style={{ flex: 1, backgroundColor: '#fff' }}>
-            <Text>Settings!</Text>
-        </View>
-    );
-}
-
-const Tab = createMaterialTopTabNavigator();
-
-export default function App() {
-    return (
-
-        <Tab.Navigator>
-            <Tab.Screen name="Balde de Compras" component={HomeScreen} />
-            <Tab.Screen name="Favoritos" component={SettingsScreen} />
-        </Tab.Navigator>
-    );
-}
-
 
 const styles = StyleSheet.create({
     Button: {
@@ -62,11 +72,17 @@ const styles = StyleSheet.create({
         paddingBottom: 15,
         backgroundColor: '#000',
         borderRadius: 25,
+        bottom: 10,
+        right: 0,
+        left: 0,
+        position: "absolute",
     },
     Divider: {
-       
         borderBottomWidth: 1,
         borderBottomColor: '#EBEBEB',
+        borderTopWidth: 1,
+        borderTopColor: '#EBEBEB',
+
     },
 
     Title: {
