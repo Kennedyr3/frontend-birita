@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import {
@@ -10,7 +10,8 @@ import {
 import product from '../../imagens/jack.jpg';
 import InputSpinner from "react-native-input-spinner";
 
-export default () => {
+export default Cart = () => {
+    const [number, setNumber ] = useState(5)
     return (
         <View style={{ flex: 1, backgroundColor: '#fff' }}>
             <Container>
@@ -32,7 +33,7 @@ export default () => {
                                 style={{ height: 50, width: 90 }}
                                 colorMax={"#f04048"}
                                 colorMin={"gray"}
-                                value={this.state.number}
+                                value={number}
                                 onChange={(num) => {
                                     console.log(num);
                                 }}
